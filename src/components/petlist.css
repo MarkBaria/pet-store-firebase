@@ -1,0 +1,42 @@
+#pet-list{
+    position: relative;
+}
+#pet-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('petty.jpg');
+    filter: blur(2.5px); /* Adjust the blur radius as needed */
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#main-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+#item{
+    height: 250px;
+    width: 400px;
+    background-color: rgba(0,0,0,0.1);
+    box-sizing: content-box;
+    margin: 10px;
+}
+button{
+    margin-top:-3px
+}
+
+#img{
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+}
+p{
+    margin-top: -10px;
+}
